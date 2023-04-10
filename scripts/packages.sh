@@ -17,6 +17,7 @@ packages=(
   fzf                      #  https://github.com/junegunn/fzf
   fd                       #  https://github.com/sharkdp/fd
   gettext
+  gnu-sed
   gpg
   go
   jq
@@ -39,6 +40,7 @@ packages=(
   ripgrep                  #  https://github.com/BurntSushi/ripgrep
   rustup
   shellcheck
+  staticcheck
   stow
   telnet
   yarn
