@@ -1,7 +1,7 @@
 vim.keymap.set("", "<leader><leader>ps", "<Cmd>Lazy sync<CR>",
   { desc = "update vim plugins" })
 
-vim.keymap.set("", "±", "<Cmd>nohlsearch<CR>",
+vim.keymap.set("", "<leader>nh", "<Cmd>nohlsearch<CR>",
   { desc = "turn off search highlight" })
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz",
@@ -12,6 +12,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz",
 
 vim.keymap.set({"i","v","c"}, 'jk', '<Esc>',
     { desc = "escape to normal mode" })
+
+vim.keymap.set("n", "<Leader>w",  ":w<CR>",  { desc = "save buffer" })
 
 function _G.set_terminal_keymaps()
   local opts = { buffer = 0 }

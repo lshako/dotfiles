@@ -61,8 +61,6 @@ return {
         { desc = "search help" })
       vim.keymap.set("n", "<leader>i", "<Cmd>Telescope builtin<CR>",
         { desc = "search builtins" })
-      vim.keymap.set("n", "<leader>j", "<Cmd>Telescope emoji<CR>",
-        { desc = "search emojis" })
       vim.keymap.set("n", "<leader>k", "<Cmd>Telescope keymaps<CR>",
         { desc = "search key mappings" })
       vim.keymap.set("n", "<leader>ld", "<Cmd>Telescope diagnostics<CR>",
@@ -90,7 +88,7 @@ return {
         { desc = "search current buffer text" })
       vim.keymap.set("n", "<leader>s", "<Cmd>Telescope treesitter<CR>",
         { desc = "search treesitter symbols" }) -- similar to lsp_document_symbols but treesitter doesn't know what a 'struct' is, just that it's a 'type'.
-      vim.keymap.set("n", "<leader>w", "<Cmd>Telescope windows<CR>",
+      vim.keymap.set("n", "<leader>j", "<Cmd>Telescope windows<CR>",
         { desc = "search windows" })
       vim.keymap.set("n", "<leader>x", "<Cmd>Telescope live_grep<CR>",
         { desc = "search text" })

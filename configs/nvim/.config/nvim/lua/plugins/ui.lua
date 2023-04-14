@@ -86,7 +86,23 @@ return {
     dependencies = 'nvim-tree/nvim-web-devicons',
     config = function()
       require("bufferline").setup({
-        options = { mode = "tabs" },
+        options = { 
+          mode = 'buffers',
+          sort_by = 'insert_after_current',
+          show_close_icon = false,
+          show_buffer_close_icons = true,
+          diagnostics = 'nvim_lsp',
+          diagnostics_update_in_insert = false,
+          offsets = {
+            {
+              text = 'EXPLORER',
+              filetype = 'neo-tree',
+              highlight = 'PanelHeading',
+              text_align = 'left',
+              separator = true,
+            },
+         },
+        },
         highlights = {
           tab = { fg = "#CCCCCC" }
           -- tab_selected = {
@@ -94,6 +110,8 @@ return {
           -- },
         }
       })
+      vim.keymap.set('n', 'gbb', '<Cmd>BufferLinePick<CR>', { desc = 'bufferline: pick buffer' })
+      vim.keymap.set('n', 'gbd', '<Cmd>BufferLinePickClose<CR>', { desc = 'bufferline: delete buffer' })
     end
   }, {
     -- FZF USED BY BETTER-QUICKFIX PLUGIN

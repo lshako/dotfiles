@@ -14,7 +14,10 @@ vim.o.grepprg = "rg --vimgrep --multiline-dotall --hidden"
 vim.o.ignorecase = true
 vim.o.inccommand = "split"
 -- vim.o.lazyredraw = true (disabled as problematic with Noice plugin)
+
 vim.o.number = true
+vim.o.relativenumber = true  
+
 vim.o.scrolloff = 5
 vim.o.shiftwidth = 2
 -- vim.o.shortmess = vim.o.shortmess .. "c" -- .. is equivalent to += in vimscript

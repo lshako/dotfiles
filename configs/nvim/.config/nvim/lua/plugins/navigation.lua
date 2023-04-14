@@ -20,10 +20,11 @@ return {
 
             vim.keymap.set("n", "<leader><Tab>", "<Cmd>Neotree toggle<CR>",
                            {desc = "open file tree"})
-            vim.keymap.set("n", "<leader>nr",
-                           "<Cmd>Neotree reveal_force_cwd<CR>", {
-                desc = "change working directory to current file location"
-            })
+
+            vim.keymap.set("n", "<leader>o", "<Cmd>NeoTreeFocus<CR>",
+            {desc = "focus File Explorer"})
+            vim.keymap.set("i", "<leader>o", "<Cmd>NeoTreeFocus<CR><Cmd>stopinsert<CR>",
+            {desc = "focus File Explorer"})
 
             -- Remap :Ex, :Sex to Neotree
             vim.cmd(":command! Ex Neotree toggle current reveal_force_cwd")
