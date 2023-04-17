@@ -19,9 +19,9 @@ return {
     config = function()
       require("Comment").setup()
 
-      vim.keymap.set("n", "<leader><leader><leader>", "<Cmd>norm gcc<CR>",
+      vim.keymap.set("n", "<leader><leader>c", "<Cmd>norm gcc<CR>",
         { desc = "comment a single line" })
-      vim.keymap.set("v", "<leader><leader><leader>",
+      vim.keymap.set("v", "<leader><leader>c",
         "<Plug>(comment_toggle_linewise_visual)",
         { desc = "comment multiple lines" })
     end

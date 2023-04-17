@@ -25,7 +25,7 @@ return {
           null_ls.builtins.formatting.autopep8,                    -- https://github.com/hhatto/autopep8
           null_ls.builtins.formatting.codespell,                   -- https://github.com/codespell-project/codespell
           null_ls.builtins.formatting.fixjson,                     -- https://github.com/rhysd/fixjson
-          null_ls.builtins.formatting.goimports_reviser,           -- https://pkg.go.dev/github.com/incu6us/goimports-reviser
+          -- null_ls.builtins.formatting.goimports_reviser,           -- https://pkg.go.dev/github.com/incu6us/goimports-reviser
           null_ls.builtins.formatting.isort,                       -- https://github.com/PyCQA/isort
           null_ls.builtins.formatting.lua_format,                  -- https://github.com/Koihik/LuaFormatter
           null_ls.builtins.formatting.markdown_toc,                -- https://github.com/jonschlinkert/markdown-toc
