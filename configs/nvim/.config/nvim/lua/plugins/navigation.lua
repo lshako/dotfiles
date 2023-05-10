@@ -18,13 +18,8 @@ return {
             vim.fn.sign_define("DiagnosticSignHint",
                                {text = "", texthl = "DiagnosticSignHint"})
 
-            vim.keymap.set("n", "<leader><Tab>", "<Cmd>Neotree toggle<CR>",
+            vim.keymap.set("n", "<leader>v", "<Cmd>Neotree toggle<CR>",
                            {desc = "open file tree"})
-
-            vim.keymap.set("n", "<leader>o", "<Cmd>NeoTreeFocus<CR>",
-            {desc = "focus File Explorer"})
-            vim.keymap.set("i", "<leader>o", "<Cmd>NeoTreeFocus<CR><Cmd>stopinsert<CR>",
-            {desc = "focus File Explorer"})
 
             -- Remap :Ex, :Sex to Neotree
             vim.cmd(":command! Ex Neotree toggle current reveal_force_cwd")

@@ -1,5 +1,5 @@
 -- ~/.local/share/nvim
-vim.g.mapleader = " " 
+vim.g.mapleader = "," 
 vim.o.termguicolors = true
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
