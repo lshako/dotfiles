@@ -1,0 +1,45 @@
+set hlsearch
+set ignorecase smartcase
+set showmode
+set history=1000
+set incsearch
+set clipboard+=unnamed
+set visualbell
+set idearefactormode=keep
+set showcmd
+set showmode
+set ideajoin
+
+" extensions
+set surround
+set multiple-cursors
+set highlightedyank
+set NERDTree
+set argtextobj
+set easymotion
+
+let mapleader = ","
+
+" NERDTree
+map <leader>nn :NERDTree<CR>
+map <leader>nf :NERDTreeFind<CR>
+
+nnoremap <Leader>w :w<CR>
+inoremap jk <Esc>
+vnoremap jk <Esc>
+
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gl :action GotoLine<CR>
+
+nnoremap <Leader>r :action RenameElement<CR>
+
+nnoremap ff :action FindInPath<CR>
+nnoremap fu :action FindUsages<CR>
+
+" Easy window split navigation {{{
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <C-h> <C-w>h
+

@@ -103,11 +103,23 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+source  ~/git/private/fzf-tab/fzf-tab.plugin.zsh
+
 bindkey "ç" fzf-cd-widget
 export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 export GOROOT=""
 
 eval "$(zoxide init zsh)"
 
 alias nv='nvim'
 alias lg='lazygit'
+alias vscode="open -a Visual\ Studio\ Code.app"
+
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export DOCKER_HOST=unix://$HOME/.colima/default/docker.sock
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+
+export PATH="$HOME/.cargo/bin:$PATH"
